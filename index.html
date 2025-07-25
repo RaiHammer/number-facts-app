@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Интересные факты о числах</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Интересные факты о числах</h1>
+
+      <div class="form-group">
+        <label for="numberInput"
+          >Введите число (оставьте пустым для случайного числа):</label
+        >
+        <input type="text" id="numberInput" placeholder="Например: 42" />
+        <div id="numberError" class="error hidden"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="factType">Выберите тип информации:</label>
+        <select id="factType">
+          <option value="trivia">Интересный факт</option>
+          <option value="math">Математический факт</option>
+          <option value="date">Факт о дате</option>
+          <option value="year">Факт о годе</option>
+        </select>
+      </div>
+
+      <button id="getFactBtn">Получить факт</button>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Загружаем интересные факты...</p>
+      </div>
+
+      <div id="resultContainer" class="result hidden">
+        <h2>Результаты</h2>
+        <div id="userInputInfo"></div>
+        <div id="factsList"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
