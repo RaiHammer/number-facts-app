@@ -18,7 +18,7 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/ваш-username/number-facts-app.git
+git clone https://github.com/RaiHammer/number-facts-app.git
 ```
 
 2. Откройте index.html в браузере
